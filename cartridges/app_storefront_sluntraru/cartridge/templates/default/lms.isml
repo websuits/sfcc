@@ -1,9 +1,0 @@
-<isset name="sessionVar" value="${'var de sesiune'}" scope = "session"/>
-<isset name="sessionVar" value="${'var de pagina'}" scope = "page"/>
-<isset name="sessionVar" value="${'var de request'}" scope = "request"/>
-
-${session.custom.sessionVar}
-<br/>
-${sessionVar}
-<br/>
-${request.custom.sessionVar}
