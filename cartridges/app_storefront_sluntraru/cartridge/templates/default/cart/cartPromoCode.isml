@@ -1,11 +1,11 @@
 <div class="row">
     <div class="col-12">
-        <p class="optional-promo form-toggle-anchor">${Resource.msg('action.enter.promo.code','cart',null)}</p>
+        <p class="form-toggle-anchor">${Resource.msg('action.enter.promo.code','cart',null)}</p>
     </div>
 </div>
 <div class="row">
     <div class="col-12">
-        <form action="${pdict.actionUrls.submitCouponCodeUrl}" class="promo-code-form" method="GET" name="promo-code-form">
+        <form action="${pdict.actionUrls.submitCouponCodeUrl}" class="promo-code-input" method="GET" name="promo-code-form">
             <div class="form-group">
                 <label for="couponCode">${Resource.msg('label.promo.code','cart',null)}</label>
                 <div class="row">
