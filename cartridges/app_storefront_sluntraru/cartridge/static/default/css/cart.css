@@ -1,0 +1,12 @@
+.promo-code-input {
+  display: block;
+}
+.promo-code-input.hidden {
+  display: none;
+}
+
+.form-toggle-anchor.hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=cart.css.map*/
