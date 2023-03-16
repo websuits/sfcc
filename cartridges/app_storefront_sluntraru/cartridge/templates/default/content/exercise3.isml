@@ -1,0 +1,7 @@
+<iscontent type="text/html" charset="UTF-8" compact="true"/>
+
+<isinclude template="/components/modules" sf-toolkit="off" />
+
+<div>
+    <iscontentasset aid="desktop-banner-image" />
+</div>
