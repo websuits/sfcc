@@ -1,0 +1,10 @@
+<isscript>
+    var content = dw.content.ContentMgr.getContent('desktopBanner');
+    console.log(content);
+</isscript>
+
+<isif condition="${content && content.online}">
+    <div>${content.name}</div>
+    <div>${content.custom.desktopBannerImage}</div>
+    <img src="${content.custom.desktopBannerImage.getUrl().toString()}" alt="" />
+</isif>
