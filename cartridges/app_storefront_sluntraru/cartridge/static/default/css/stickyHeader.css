@@ -1,0 +1,13 @@
+.trigger-sticky {
+  background: green;
+}
+
+body.showStickyCta header {
+  padding-bottom: 120px;
+}
+body.showStickyCta header nav {
+  position: fixed;
+  top: 0;
+}
+
+/*# sourceMappingURL=stickyHeader.css.map*/

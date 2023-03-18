@@ -1,0 +1,15 @@
+.trigger-sticky {
+    background:green;
+}
+
+body {
+    &.showStickyCta {
+        header {
+            padding-bottom: 120px;
+            nav {
+                position: fixed;
+                top: 0;
+            }
+        }
+    }
+}

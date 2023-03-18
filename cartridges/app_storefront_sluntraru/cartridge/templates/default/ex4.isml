@@ -1,0 +1,7 @@
+<isscript>
+    var content = dw.content.ContentMgr.getContent('stickyTrigger');
+</isscript>
+
+<isif condition="${content && content.online}">
+   <div class="trigger-sticky">${content.custom.body}</div>
+</isif>

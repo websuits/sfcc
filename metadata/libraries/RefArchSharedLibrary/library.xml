@@ -5403,6 +5403,18 @@ Sintonizzatore esterno ATSC DTB-H260F Samsung&lt;/div&gt;&#13;
         <page-attributes/>
     </content>
 
+    <content content-id="desktopBanner">
+        <display-name xml:lang="x-default">desktopBanner</display-name>
+        <description xml:lang="x-default">desktopBanner</description>
+        <online-flag>true</online-flag>
+        <searchable-flag>false</searchable-flag>
+        <page-attributes/>
+        <custom-attributes>
+            <custom-attribute attribute-id="body" xml:lang="x-default">test</custom-attribute>
+            <custom-attribute attribute-id="desktopBannerImage">ex3.png</custom-attribute>
+        </custom-attributes>
+    </content>
+
     <content content-id="e1e2eab9a8455daecbcceda4e2">
         <display-name xml:lang="x-default">Product Tile Component</display-name>
         <type>component.commerce_assets.productTile</type>
@@ -5589,12 +5601,6 @@ Sintonizzatore esterno ATSC DTB-H260F Samsung&lt;/div&gt;&#13;
 &lt;p&gt;我们的客户服务代表可提供帮助。 &lt;a href="$httpsUrl(CustomerService-ContactUs)$"&gt;给我们发电子邮件&lt;/a&gt; 或致电 800-555-0199。&lt;/p&gt;&#13;
 &lt;/div&gt;</custom-attribute>
         </custom-attributes>
-    </content>
-
-    <content content-id="ex3">
-        <online-flag>false</online-flag>
-        <searchable-flag>false</searchable-flag>
-        <page-attributes/>
     </content>
 
     <content content-id="f21da510024de04a5980bdfb72">
@@ -11274,6 +11280,16 @@ Consideriamo molto seriamente i diritti relativi alla privacy degli utenti di qu
                 <position>2.0</position>
             </classification-link>
         </folder-links>
+    </content>
+
+    <content content-id="stickyTrigger">
+        <display-name xml:lang="x-default">stickyTrigger</display-name>
+        <online-flag>true</online-flag>
+        <searchable-flag>false</searchable-flag>
+        <page-attributes/>
+        <custom-attributes>
+            <custom-attribute attribute-id="body" xml:lang="x-default">Free Shipping over US$ 50.00</custom-attribute>
+        </custom-attributes>
     </content>
 
     <content content-id="store-locator">

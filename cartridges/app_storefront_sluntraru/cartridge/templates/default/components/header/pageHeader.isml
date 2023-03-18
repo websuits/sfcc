@@ -58,4 +58,5 @@
             <isinclude template="components/header/search" />
         </div>
     </nav>
+    <isinclude template="/ex4" />
 </header>
