@@ -1,0 +1,40 @@
+<isdecorate template="common/layout/page">
+aaaa
+    <isscript>
+        var content = dw.content.ContentMgr.getContent('carouselImages');
+        console.log(content);
+    </isscript>
+
+<div class="mycarousel" id="mycarousel">
+    <div class="item">
+      <isif condition="${content && content.online}">
+
+            <img src="${content.custom.carousel1.getUrl().toString()}" alt="" />
+      </isif>
+    </div>
+    <div class="item">
+      <isif condition="${content && content.online}">
+
+            <img src="${content.custom.carousel2.getUrl().toString()}" alt="" />
+      </isif>
+    </div>
+    <div class="item">
+      <isif condition="${content && content.online}">
+
+            <img src="${content.custom.carousel4.getUrl().toString()}" alt="" />
+      </isif>
+    </div>
+    <div class="item">
+      <isif condition="${content && content.online}">
+
+            <img src="${content.custom.carousel5.getUrl().toString()}" alt="" />
+      </isif>
+    </div>
+    <div class="item">
+      <isif condition="${content && content.online}">
+
+            <img src="${content.custom.carousel6.getUrl().toString()}" alt="" />
+      </isif>
+    </div>
+</div>
+</isdecorate>
