@@ -1,3 +1,0 @@
-<isdecorate template="common/layout/page">
-<isinclude url="${URLUtils.url('Tile-Show', 'pid', pdict.productId, 'swatches', true, 'ratings', true)}" />
-</isdecorate>

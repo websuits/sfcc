@@ -1,0 +1,12 @@
+.promo-code-input {
+    display: block;
+    &.hidden {
+        display: none;
+    }
+}
+
+.form-toggle-anchor {
+    &.hidden {
+        display: none;
+    }
+}
