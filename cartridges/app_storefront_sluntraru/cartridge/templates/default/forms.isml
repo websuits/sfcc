@@ -1,0 +1,161 @@
+<isdecorate template="common/layout/page">
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addJs('./../../client/default/js/myForm.js');
+    </isscript>
+    <div class="container">
+        <h1>
+        <isprint value="${pdict.title}" encoding="htmlcontent" />
+        </h1>
+        </br>
+        <form action="${pdict.actionUrl}" class="registration row" method="POST" name="${pdict.myform.htmlName}">
+            <h2 class="col-md-12">
+                ${Resource.msg('title.subtitle.shipping','forms',null)}
+            </h2>
+            </br>
+            <div class="col-md-6 form-group required">
+                <label class="form-control-label" for="firstname">
+                    <isprint value="${pdict.myform.customer.firstname.label}" encoding="htmlcontent" />
+                </label>
+                <input type="text" class="form-control" id="firstname" <isprint
+                    value=${pdict.myform.customer.firstname.attributes} encoding="off" />>
+                <div class="invalid-feedback" id="form-fname-error"></div>
+            </div>
+
+            <div class="col-md-6 form-group required">
+                <label class="form-control-label" for="lastname">
+                    <isprint value="${pdict.myform.customer.lastname.label}" encoding="htmlcontent" />
+                </label>
+                <input type="text" class="form-control" id="lastname" <isprint
+                    value=${pdict.myform.customer.lastname.attributes} encoding="off" />>
+                <div class="invalid-feedback" id="form-lname-error"></div>
+            </div>
+
+            <div class="form-group col-md-12">
+                <label class="form-control-label" for="address1">
+                    <isprint value="${pdict.myform.customer.address1.label}" encoding="htmlcontent" />
+                </label>
+                <input type="text" class="form-control" id="address1" <isprint
+                    value=${pdict.myform.customer.address1.attributes} encoding="off" />>
+            </div>
+
+            <div class="form-group col-md-12">
+                <label class="form-control-label" for="address2">
+                    <isprint value="${pdict.myform.customer.address2.label}" encoding="htmlcontent" />
+                </label>
+                <input type="text" class="form-control" id="address2" <isprint
+                    value=${pdict.myform.customer.address2.attributes} encoding="off" />>
+            </div>
+
+            <div class="col-md-6">
+            <div class="form-group required">
+                <label class="form-control-label" for="country">
+                    <isprint value="${pdict.myform.customer.country.label}" encoding="htmlcontent" />
+                </label>
+                <select class="form-control" id="country" <isprint value="${pdict.myform.customer.country.attributes}" encoding="off" /> autocomplete="address-level1">
+                    <isloop items=${pdict.myform.customer.country.options} var="country">
+                        <option id="${country.id}" value="${country.htmlValue}" <isif condition="${country.selected}">selected</isif>>${country.label || ' '}</option>
+                    </isloop>
+                </select>
+                <div class="invalid-feedback"></div>
+            </div>
+        </div>
+
+            <div class="col-md-6">
+            <div class="form-group required">
+                <label class="form-control-label" for="states">
+                    <isprint value="${pdict.myform.customer.states.label}" encoding="htmlcontent" />
+                </label>
+                <select class="form-control" id="states" <isprint value="${pdict.myform.customer.states.attributes}" encoding="off" /> autocomplete="address-level1">
+                    <isloop items=${pdict.myform.customer.states.options} var="states">
+                        <option id="${states.id}" value="${states.htmlValue}" <isif condition="${states.selected}">selected</isif>>${states.label || ' '}</option>
+                    </isloop>
+                </select>
+                <div class="invalid-feedback"></div>
+            </div>
+        </div>
+
+            <div class="form-group col-md-6">
+                <label class="form-control-label" for="postal">
+                    <isprint value="${pdict.myform.customer.postal.label}" encoding="htmlcontent" />
+                </label>
+                <input type="text" class="form-control" id="postal" <isprint
+                    value=${pdict.myform.customer.postal.attributes} encoding="off" />>
+            </div>
+
+            <div class="form-group col-md-6">
+                <label class="form-control-label" for="phone">
+                    <isprint value="${pdict.myform.customer.phone.label}" encoding="htmlcontent" />
+                </label>
+                <input type="text" class="form-control" id="phone" <isprint
+                    value=${pdict.myform.customer.phone.attributes} encoding="off" />>
+            </div>
+
+
+            <div class="form-group col-md-12">
+                <label class="form-control-label" for="comment">
+                    <isprint value="${pdict.myform.customer.comment.label}" encoding="htmlcontent" />
+                </label>
+                <textarea class="form-control" id="comment" <isprint
+                    value=${pdict.myform.customer.comment.attributes} encoding="off" />></textarea>
+            </div>
+
+
+            </br>
+             <h2 class="col-md-12">
+                ${Resource.msg('title.subtitle.billing','forms',null)}
+            </h2>
+            </br>
+
+
+            <div class="form-group col-md-12">
+                <label class=" form-control-label" for="card">
+                    <isprint value="${pdict.myform.customer.card.label}" encoding="htmlcontent" />
+                </label>
+                <input type="text" class="form-control" id="card" <isprint
+                    value=${pdict.myform.customer.card.attributes} encoding="off" />>
+            </div>
+            <div class="form-group col-md-6">
+                <label class=" form-control-label" for="expmonth">
+                    <isprint value="${pdict.myform.customer.expmonth.label}" encoding="htmlcontent" />
+                </label>
+                <input type="text" class="form-control" id="expmonth" <isprint
+                    value=${pdict.myform.customer.expmonth.attributes} encoding="off" />>
+            </div>
+            <div class="form-group col-md-6">
+                <label class=" form-control-label" for="expyear">
+                    <isprint value="${pdict.myform.customer.expyear.label}" encoding="htmlcontent" />
+                </label>
+                <input type="text" class="form-control" id="expyear" <isprint
+                    value=${pdict.myform.customer.expyear.attributes} encoding="off" />>
+            </div>
+
+            <div class="form-group col-md-6">
+                <label class=" form-control-label" for="code">
+                    <isprint value="${pdict.myform.customer.code.label}" encoding="htmlcontent" />
+                </label>
+                <input type="text" class="form-control" id="code" <isprint
+                    value=${pdict.myform.customer.code.attributes} encoding="off" />>
+            </div>
+
+
+            <div class="form-group col-md-6">
+                <label class=" form-control-label" for="email">
+                    <isprint value="${pdict.myform.customer.email.label}" encoding="htmlcontent" />
+                </label>
+                <input type="text" class="form-control" id="email" <isprint
+                    value=${pdict.myform.customer.email.attributes} encoding="off" />>
+            </div>  
+
+            <input type="hidden" name="${pdict.csrf.tokenName}" value="${pdict.csrf.token}" />
+            
+            <button type="submit" class="btn btn-block btn-primary col-md-10">
+                ${Resource.msg('button.submitpayment.submit', 'forms', null)}
+            </button>
+
+            <div class="col-md-2">
+                ${Resource.msg('button.goup.submit', 'forms', null)}
+            </div>
+        </form>
+    </div>
+</isdecorate>
