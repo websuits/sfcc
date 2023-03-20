@@ -1,0 +1,7 @@
+<footer id="footercontent">
+    <div class="container">
+        <div class="footer-container copy row">
+            <iscontentasset aid="footer-copy" />
+        </div>
+    </div>
+</footer>

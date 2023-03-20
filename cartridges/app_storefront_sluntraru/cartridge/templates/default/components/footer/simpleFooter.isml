@@ -1,0 +1,38 @@
+
+<footer id="footercontent">
+    <div class="container">
+        <div class="footer-container benefits row">
+             <iscontentasset aid="footer-benefits" />
+        </div>
+        <div class="footer-container logos row">
+            <div class="footer-item col-md-4 store">
+                <iscontentasset aid="footer-trusted" />
+            </div>
+            <div class="footer-item col-md-4 store">
+                <iscontentasset aid="footer-payment" />
+            </div>
+            <div class="footer-item col-md-4 store">
+                <iscontentasset aid="footer-shipping" />
+            </div>
+        </div>
+        <div class="footer-container service row">
+            <div class="footer-item col-md-12 store">
+                <div class="footer-item col-md-12 store"></div>
+                <div class="footer-item col-md-12 store"><iscontentasset aid="footer-hotline" /></div>
+                <div class="footer-item col-md-12 store"><iscontentasset aid="footer-faq" /></div>=
+            </div>
+            <div class="footer-item col-md-12 store">
+                <iscontentasset aid="footer-about" />
+            </div>
+            <div class="footer-item col-md-12 store">
+                <iscontentasset aid="footer-account" />
+            </div>
+        </div>
+        <div class="footer-container lorem row">
+           <iscontentasset aid="footer-lorem" />
+        </div>
+        <div class="footer-container copy row">
+            <iscontentasset aid="footer-copy" />
+        </div>
+    </div>
+</footer>
