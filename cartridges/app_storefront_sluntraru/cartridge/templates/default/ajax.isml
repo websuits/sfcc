@@ -1,0 +1,29 @@
+<isdecorate template="common/layout/page">
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addJs('/js/myModal.js');
+    </isscript>
+    <isinclude template="./requestAjaxModal"/>
+     <div class="container">
+        <div class="row">
+<form method="post" action="">
+            <div class="form-group col-md-6">
+                <label class=" orm-control-label" for="test">
+                    test
+                </label>
+                <input value="" type="text" class="form-control" id="test"/>
+            </div>
+
+             <a
+             href="#"
+             class="btn btn-block btn-primary btn-mymodal col-md-6"
+             data-toggle="modal"
+             data-target="#requestAjaxModal">
+                test
+            </a>
+</form>
+
+
+        </div>
+    </div>
+</isdecorate>
