@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users xmlns="http://www.demandware.com/xml/impex/user/2007-09-05">
+    <user login="estefanluntraru@gmail.com" enabled-flag="true">
+        <credentials>
+            <external-id>ccdcc29e-196c-45fe-93c8-0d4173465c3b</external-id>
+        </credentials>
+        <profile>
+            <first-name>Stefan</first-name>
+            <last-name>Luntraru</last-name>
+            <email>estefanluntraru@gmail.com</email>
+        </profile>
+    </user>
+
+</users>
