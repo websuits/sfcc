@@ -1,0 +1,12 @@
+<isscript>
+    var content = dw.content.ContentMgr.getContent('exercise5');
+    var html = content.custom;
+</isscript>
+
+<isdecorate template="common/layout/page">
+ <div>
+        <isif condition="${content && content.online}">
+            <isprint value="${html.body}" encoding="off" />
+        </isif>
+ </div>
+</isdecorate>
